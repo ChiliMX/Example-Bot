@@ -120,7 +120,7 @@ class Tag(commands.Cog):
                 with open(data[tag], 'w') as ctag:
                     ctag.truncate(0)
 
-                    ctag.write(ntagc)
+                    ctag.write(f"{ntagc}")
 
                 await ctx.send(f'set content for tag "{tag} as {ntagc}"')
             except:
