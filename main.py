@@ -23,7 +23,7 @@ async def on_ready():
     print(f"Logged in as {bot.user}\n({bot.user.id})")
 
 
-extentions = ['cogs.staff.moderation',
+extensions = ['cogs.staff.moderation',
               'cogs.utils.ping',
               'cogs.staff.filters.antiswear',
               'cogs.staff.filters.selfbot',
@@ -32,7 +32,7 @@ extentions = ['cogs.staff.moderation',
               'cogs.staff.modmail.modmail'
               ]
 
-for extention in extentions:
+for extension in extensions:
     bot.load_extension(extention)
 
 
