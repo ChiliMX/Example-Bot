@@ -33,7 +33,7 @@ extensions = ['cogs.staff.moderation',
               ]
 
 for extension in extensions:
-    bot.load_extension(extention)
+    bot.load_extension(extension)
 
 
 load_dotenv()
