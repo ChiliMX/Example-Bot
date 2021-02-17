@@ -7,7 +7,12 @@ from datetime import datetime
 
 def privatechannel():
     def predicate(ctx):
-        return not ctx.channel.overwrites_for(ctx.guild.default_role).view_channel and ctx.channel.overwrites_for(ctx.guild.default_role).view_channel is not None
+
+        return (
+                not ctx.channel.overwrites_for(ctx.guild.default_role).view_channel
+                and ctx.channel.overwrites_for(ctx.guild.default_role).view_channel is not None
+        )
+
     return commands.check(predicate)
 
 

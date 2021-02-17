@@ -15,7 +15,10 @@ allowed_mentions = discord.AllowedMentions(roles=True,
                                            users=True,
                                            everyone=False)
 
-bot = commands.Bot(command_prefix=commands.when_mentioned_or(PREFIX), intents=intents, allowed_mentions=allowed_mentions, activity=discord.Game(name="Setting a Good Example"), help_command=MyHelp())
+bot = commands.Bot(command_prefix=commands.when_mentioned_or(PREFIX),
+                   intents=intents, allowed_mentions=allowed_mentions,
+                   activity=discord.Game(name="Setting a Good Example"),
+                   help_command=MyHelp())
 
 
 @bot.event
