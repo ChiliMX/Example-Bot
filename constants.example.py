@@ -1,5 +1,8 @@
+# your bots prefix
 PREFIX = "PASTE_YOUR_PREFIX_HERE"
 
+# your main guild ID
 GUILD_ID = PASTE_YOUR_GUILD_ID_HERE
 
+# your modmail channel ID
 MODMAIL_ID = PASTE_YOUR_MODMAIL_CHANNEL_ID_HERE
