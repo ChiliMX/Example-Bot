@@ -1,0 +1,3 @@
+in discord.py, bot and client are two very different things. `client` is for instances of [`discord.Client`](https://discordpy.readthedocs.io/en/latest/api.html?highlight=discord%20client#discord.Client), whereas `bot` is for instances of [`commands.Bot`](https://discordpy.readthedocs.io/en/latest/ext/commands/api.html?highlight=commands%20bot#discord.ext.commands.Bot).
+
+ **what are the benefits of using commands.Bot?**
