@@ -122,7 +122,9 @@ class Tag(commands.Cog):
 
                     ctag.write(f"{ntagc}")
 
-                await ctx.send(f'set content for tag "{tag} as {ntagc}"')
+                    embed = discord.Embed(colour=rose, title=tag.upper(), description=ntagc)
+
+                await ctx.send(f'set content for tag "{tag}" as', embed=embed)
             except:
                 await self.fetch_close_tags(ctx, tag)
 

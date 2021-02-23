@@ -18,6 +18,6 @@ embed.set_image(url="attachment://file.png")  # Filename here must be exactly sa
 ```
 After this, you can send an embed with an attachment to Discord:
 ```py
-await channel.send(file=file, embed=embed)
+await channel.send(embed=embed, file=file)
 ```
 This example uses [`discord.TextChannel`](https://discordpy.readthedocs.io/en/latest/api.html#discord.TextChannel) for sending, but any instance of [`discord.abc.Messageable`](https://discordpy.readthedocs.io/en/latest/api.html#discord.abc.Messageable) can be used for sending.
