@@ -56,7 +56,7 @@ class MyHelp(commands.HelpCommand):
 
         l = ListSource([sembed, uembed, oembed])
         pages = ReplyMenu(source=l)
-        await pages.start(ctx=self.context)
+        await pages.start(self.context)
 
 
     async def send_command_help(self, command):
